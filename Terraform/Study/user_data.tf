@@ -8,7 +8,6 @@ resource "aws_instance" "example" {
 		echo "Hello, World" > index.html
 		nohup busybox httpd -f -p 8080 &
 		EOF
-
 		
  	tags {
 		NAME = "terraform-example"
